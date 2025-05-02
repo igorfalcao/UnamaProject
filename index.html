@@ -3,34 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Hello World</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      }
-      h1 {
-        color: #3498db;
-        font-size: 3em;
-        transition: transform 0.3s;
-      }
-      p {
-        color: #555;
-        max-width: 600px;
-        margin-top: 20px;
-      }
+      
     </style>
   </head>
   <body>
-    <div>
+    <div class="container">
       <h1>Alô Mundo!</h1>
       <p>
         Bem-vindo ao curso de Ciência da Computação. O curso abrange áreas como
         programação, algoritmos, redes e IA.
       </p>
     </div>
+    <div class="Carrocel">
+      <div class="Carrocel__item">
+      <!--Radio buttons-->
+        <input type="radio" name="carrocel-btn" id="item1" />
+        <input type="radio" name="carrocel-btn" id="item2" />
+        <input type="radio" name="carrocel-btn" id="item3" />
+        <input type="radio" name="carrocel-btn" id="item4" />
+        
+     <!--fim Radio buttons-->
+
+     <!--Carrocel-->
+        <div class="first img">
+          <img src="https://i.pinimg.com/736x/c9/ca/c9/c9cac91ae963cf84859b07e2e22ba489.jpg" alt="Imagem 1" />
+        </div>
+        <div class="img" >
+          <img src="https://i.pinimg.com/736x/5d/e9/49/5de9492fa52523ba50aad35a3fe433c3.jpg" alt="Imagem 2" />
+        </div>
+        <div class="img">
+          <img src="https://i.pinimg.com/736x/1a/00/b0/1a00b0842b2d86e6b10ff5e8257e25c0.jpg" alt="Imagem 3" />
+        </div>
+        <div class="img">
+          <img src="https://i.pinimg.com/736x/35/be/4f/35be4fcc0f4cd336753cfeffb03a7e2f.jpg" alt="Imagem 4" />
+        </div>
+        <!--fim Carrocel-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        
+
+      </div>
+        <div class="Carrocel__btns">
+          <label for="item1" class="manual-btn"></label>
+          <label for="item2" class="manual-btn"></label>
+          <label for="item3" class="manual-btn"></label>
+          <label for="item4" class="manual-btn"></label>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
