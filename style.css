@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #3498db;
+    position: relative;
+    font-size: 3em;
+    transition: transform 0.3s;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    
+
+
+}
+p {
+    position: relative;
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: center;
+
+}.carrocel {
+    background-color: #555;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Carrocel__item {
+    width: 400%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.Carrocel__item input {
+    display: none;
+}
+.img {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    
+    
+}
+.img img{
+    width: 340px;
+    
+    
+}
+.Carrocel__btns {
+    position: absolute;
+    right: 670px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid #161fd0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 50px;
+    
+    
+}
+#item1:checked ~ .first {
+    margin-left: 0;
+}
+#item2:checked ~ .first {
+    margin-left: -25%;
+}
+#item3:checked ~ .first {
+    margin-left: -50%;
+}
+#item4:checked ~ .first {
+    margin-left: -75%;
+}
+.navigation-auto div {
+    border: 2px solid #161fd0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    right: 670px;
+    margin-top: 414px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 50px;
+}
+#item1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #211212;
+}
+#item2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #211212;
+}
+#item3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #211212;
+}
+#item4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #211212;
+}
